@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2D8AF9A-16FD-412F-9D00-52AC8EC070E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProiectBD</RootNamespace>
+    <AssemblyName>ProiectBD</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComplexQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComplexQ.Designer.cs">
+      <DependentUpon>ComplexQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOras.Designer.cs">
+      <DependentUpon>DeleteOras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteServiciu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteServiciu.Designer.cs">
+      <DependentUpon>DeleteServiciu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iCleanDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>iCleanDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InsertOrase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertOrase.Designer.cs">
+      <DependentUpon>InsertOrase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertServicii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertServicii.Designer.cs">
+      <DependentUpon>InsertServicii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleQ.Designer.cs">
+      <DependentUpon>SimpleQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOrase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateOrase.Designer.cs">
+      <DependentUpon>UpdateOrase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateServicii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateServicii.Designer.cs">
+      <DependentUpon>UpdateServicii.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComplexQ.resx">
+      <DependentUpon>ComplexQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOras.resx">
+      <DependentUpon>DeleteOras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteServiciu.resx">
+      <DependentUpon>DeleteServiciu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertOrase.resx">
+      <DependentUpon>InsertOrase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertServicii.resx">
+      <DependentUpon>InsertServicii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SimpleQ.resx">
+      <DependentUpon>SimpleQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOrase.resx">
+      <DependentUpon>UpdateOrase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateServicii.resx">
+      <DependentUpon>UpdateServicii.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="iCleanDataSet.xsc">
+      <DependentUpon>iCleanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="iCleanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>iCleanDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="iCleanDataSet.xss">
+      <DependentUpon>iCleanDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
